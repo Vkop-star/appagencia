@@ -52,9 +52,11 @@ public class App
         System.out.println("Nome Completo: "+yasmin.nomeCompleto);
         System.out.println("Idade: "+yasmin.calcularIdade()+" anos"); 
         System.out.println("E maior de idade: "+yasmin.eMaiorDeIdade());
+        System.out.println("Mora no endereço: "+endereco.cep+endereco.logradouro+endereco.cidade+endereco.estado);
         System.out.println("Nome Completo: "+cleiton.nomeCompleto);
         System.out.println("Idade: "+cleiton.calcularIdade()+" anos");
         System.out.println("E maior de idade: "+cleiton.eMaiorDeIdade());
+        System.out.println("Mora no endereço: "+endereco2.cep+endereco2.logradouro+endereco2.cidade+endereco2.estado);
 
         //Escolaridade e1 = new Escolaridade();
         //e1.nomeCurso = "Sistema de redes";
