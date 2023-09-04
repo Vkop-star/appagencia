@@ -10,5 +10,3 @@ public class Endereco {
     public Estado estado;
     public String nacionalidade;
 }
-
-//teste

@@ -1,5 +1,11 @@
 package br.com.senai.enuns;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+@Getter
+@AllArgsConstructor
+
 public enum Genero {
     M("MASCULINO"), 
     F("FEMININO"), 
@@ -7,13 +13,5 @@ public enum Genero {
 
     private String Tipo;
 
-    Genero( String Tipo) {
-        this.Tipo = Tipo;
-    }
 
-    public String getTipo() {
-        return Tipo;
-    }
-
-    //teste
 }
