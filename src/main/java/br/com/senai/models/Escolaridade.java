@@ -10,4 +10,3 @@ public class Escolaridade {
     public boolean concluido;
     
 }
-//teste 

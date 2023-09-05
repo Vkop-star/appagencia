@@ -6,34 +6,50 @@ import java.util.ArrayList;
 import java.util.List;
 
 import br.com.senai.enuns.Genero;
+import lombok.Getter;
+import lombok.Setter;
+
+    @Getter
+    @Setter
 
 public class Candidato {
-    public String nomeCompleto;
-    public LocalDate dataNascimento;
-    public String cpf;
-    public String email;
-    public Genero genero;
-    public String naturalidade;
-    public Endereco endereco;
-    public String nacionalidade;
-    public List<Escolaridade> escolaridade = new ArrayList<>();
-    public String calcularIdade;
+    private String nomeCompleto;
+    private LocalDate dataNascimento;
+    private String cpf;
+    private String email;
+    private Genero genero;
+    private String naturalidade;
+    private Endereco endereco;
+    private String nacionalidade;
+    private List<Escolaridade> escolaridade = new ArrayList<>();
+    private String calcularIdade;
+    
+    /*metodo de calcular idade */
 
     public int calcularIdade() {
         return Period.between(this.dataNascimento, LocalDate.now()).getYears();
     }
 
-    /* preciso de um metodo para validar o candidato sendo maior de idade 14 */
+    /* preciso de um metodo para validar o candidato sendo maior de idade 18 */
         
     public String eMaiorDeIdade() {
         return calcularIdade() >= 18 ? "sim" : "nao"; //ternario
+   }
+    
+    public String getNomeCompleto() {
+        return nomeCompleto;
+    }
 
-        /*if (calcularIdade() >= 18) {
-            return "sim";
-        } else {
-            return "nao";
-        } */
- 
- //teste
-   } 
+    public void setNomeCompleto(String nomeCompleto) {
+        this.nomeCompleto = nomeCompleto;
+    } 
+
+    public LocalDate getDataNascimento() {
+        return dataNascimento;
+    }
+
+    public void setDataNascimento() {
+        this.dataNascimento = dataNascimento;
+    }
+
 }
